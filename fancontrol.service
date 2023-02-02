@@ -1,0 +1,11 @@
+[Unit]
+Description=Control the fan based on temperature
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/fan-control
+
+[Install]
+WantedBy=multi-user.target
